@@ -1,6 +1,6 @@
 {
-  "name": "Node.js Socket.io Example",
-  "description": "Part of the Using WebSockets on Heroku Tutorial",
-  "repository": "https://github.com/justadudewhohacks/websocket-chat.git",
+  "name": "websocket-chat",
+  "description": "Example group chat app built with socket.io and react.",
+  "repository": "https://github.com/leejiajou/chatapp.git",
   "keywords": ["node", "websocket", "socket.io"]
 }
