@@ -1,6 +1,9 @@
 {
   "name": "websocket-chat",
   "version": "0.0.0",
+  "engines": {
+    "node": "6.2.0"
+  },
   "description": "Example group chat app built with socket.io and react.",
   "scripts": {
     "server": "node ./server/server.js",
