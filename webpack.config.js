@@ -37,7 +37,7 @@ module.exports = {
     })
   ],
   devServer: {
-    port: process.env.PORT || 3000;,
+    port: process.env.PORT || 3000,
     contentBase: path.resolve(__dirname, 'public'),
     hot: true,
     historyApiFallback: true
