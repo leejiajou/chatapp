@@ -1,7 +1,8 @@
 const io = require('socket.io-client')
 
 export default function () {
-  const socket = io.connect('http://localhost:3000')
+//  const socket = io.connect('http://localhost:3000')
+  const socket = io();
 
   function registerHandler(onMessageReceived) {
     socket.on('message', onMessageReceived)
