@@ -1,10 +1,12 @@
 const webpack = require('webpack')
 const path = require('path')
+const io = require('socket.io-client')
+const socket = io();
 
 module.exports = {
   entry: [
     'react-hot-loader/patch',
-    'webpack-dev-server/client?http://localhost:3001',
+    'webpack-dev-server/client?${ socket }',
     'webpack/hot/only-dev-server',
     path.resolve(__dirname, 'client', 'index.jsx')
   ],
@@ -35,7 +37,7 @@ module.exports = {
     })
   ],
   devServer: {
-    port: 3001,
+    port: process.env.PORT || 3000;,
     contentBase: path.resolve(__dirname, 'public'),
     hot: true,
     historyApiFallback: true
