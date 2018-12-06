@@ -1,5 +1,6 @@
 const server = require('http').createServer()
 const io = require('socket.io')(server)
+const PORT = process.env.PORT || 3000;
 
 const ClientManager = require('./ClientManager')
 const ChatroomManager = require('./ChatroomManager')
@@ -45,7 +46,7 @@ io.on('connection', function (client) {
   })
 })
 
-server.listen(3000, function (err) {
+server.listen(PORT, function (err) {
   if (err) throw err
   console.log('listening on port 3000')
 })
